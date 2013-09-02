@@ -121,9 +121,9 @@ public class ExampleHttp implements CollectdInitInterface,CollectdConfigInterfac
         try {
         byte[] buffer = new byte[bufferSize];
         int total = 0;
-        int bitsLus = 0;
-        while (  (bitsLus = iStream.read(buffer)) > 0) {
-                total+= bitsLus;
+        int bits = 0;
+        while (  (bits = iStream.read(buffer)) > 0) {
+                total+= bits;
                 if(total>10000)
                         break;
         }
