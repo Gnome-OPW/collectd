@@ -18,8 +18,8 @@ CollectdReadInterface,CollectdShutdownInterface {
 	 * 
 	 */
 		
-		Collectd.registerConfig	  ("Skeleton", this);
-		Collectd.registerInit     ("Skeleton", this);
+	    Collectd.registerConfig	  ("Skeleton", this);
+	    Collectd.registerInit     ("Skeleton", this);
 	    Collectd.registerRead     ("Skeleton", this);
 	    Collectd.registerShutdown ("Skeleton", this);
 	}
@@ -29,6 +29,8 @@ CollectdReadInterface,CollectdShutdownInterface {
 	//a tree representing the configuration for this plugin. 
 	//The root itself is the representation of the <Plugin /> block, 
 	// so in next to all cases the children of the root are the first interesting objects.
+	
+	//see GetConf.java for sample code
 
 		//if success
 		//return(0);
@@ -38,7 +40,7 @@ CollectdReadInterface,CollectdShutdownInterface {
 	
 	public int init() {
 	//called after config, It is supposed to set up the plugin. e. g. start threads, open connections...
-	//see GetConf.java for sample code
+	
 	
 	//if success
 	//return(0);
